@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:summary="Menu de preferencias"
+        android:title="Datos personales">  
+          <EditTextPreference
+            android:key="username"
+            android:summary="Pulse para teclear el nombre de usuario"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Username"/>  
+          
+         </PreferenceCategory>
+
+    <PreferenceCategory
+        android:summary="Menu de preferencias"
+        android:title="Servidor">
+
+        <ListPreference
+            android:entries="@array/listOptionsServidor"
+            android:entryValues="@array/listOptionsServidor"
+            android:key="listServidores"
+            android:summary="Servidores"
+            android:title="Lista Servidores"/> 
+
+         
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:summary="Menu de preferencias"
+        android:title="Opciones mostrar">
+        <ListPreference
+            android:entries="@array/listOptions"
+            android:entryValues="@array/listOptions"
+            android:key="listUsuarios"
+            android:summary="Usuarios que mostrara"
+            android:title="Usuarios"/>
+
+         
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:summary="Menu de preferencias"
+        android:title="Modo">
+        <CheckBoxPreference
+            android:key="checkBox"
+            android:summary="Activar o desactivar el modo incognito"
+            android:title="Modo Incognito"/>
+
+         
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:summary="Menu de preferencias"
+        android:title="Modo Wifi GPS">
+        <Preference
+            android:title="Wifi/GPS"
+            android:key="Wifi"
+            android:summary="Activar o desactivar el modo Wifi/GPS">
+
+
+        </Preference>
+
+
+
+         
+    </PreferenceCategory>
+
+</PreferenceScreen>

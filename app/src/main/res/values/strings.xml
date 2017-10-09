@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">WAY</string>
+    <string name="title_activity_maps">Map</string>
+    <string-array name="listOptions">  
+             <item>Usuario</item>  
+             <item>Todos</item> 
+             <item>Posicion Actual</item> 
+             </string-array>
+
+    <string-array name="listOptionsServidor">  
+             <item>Xavi</item>  
+             <item>Ruben</item> 
+             <item>Arantxa</item> 
+             </string-array>
+</resources>

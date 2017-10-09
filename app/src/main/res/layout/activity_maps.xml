@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.txilla.way.MapsActivity" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/buttonSettings"
+        android:src="@drawable/settings"
+        map:fabSize="normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        map:backgroundTint="@android:color/white"
+        map:rippleColor="?attr/colorBackgroundFloating"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginTop="11dp" />
+</RelativeLayout>
